@@ -21,5 +21,15 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0"
-  }
+  },
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeowoony/doglove.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yeowoony/doglove/issues"
+  },
+  "homepage": "https://github.com/Yeowoony/doglove#readme"
 }
