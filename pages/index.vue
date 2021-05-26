@@ -1,28 +1,14 @@
 <template>
-<main>
   <div>
-    <h1>
-      운동(헬스)하는 사람을 위한 웹사이트
-    </h1>
-    <br>
-    <h1>
-      운동부위
-    </h1>
-    <h2>
-      가슴
-    </h2>
-    <h2>
-      등
-    </h2>
-    <h2>
-      하체
-    </h2>
-    <h2>
-      어깨
-    </h2>
-    <h2>
-      유산소
-    </h2>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">
+          운동(헬스)하는 사람을 위한 웹사이트
+        </p>
+        <p class="subtitle">
+          운동 부위
+        </p>
+      </div>
+    </section>
   </div>
-</main>
 </template>

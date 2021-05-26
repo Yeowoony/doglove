@@ -1,3 +1,3 @@
 git add --all
-git commit -m "start health website"
+git commit -m "add Bulma CSS"
 git push -u origin master
