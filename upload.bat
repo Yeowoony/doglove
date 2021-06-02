@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add tables for Rest time info"
+git commit -m "create protein.vue"
 git push -u origin master
