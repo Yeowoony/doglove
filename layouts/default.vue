@@ -8,6 +8,11 @@
         <li>
           <nuxt-link to="/protein"><i class="fas fa-search"></i>&nbsp;단백질 섭취량</nuxt-link>
         </li>
+        <li>
+					<nuxt-link to="/how"
+						><i class="fas fa-globe-americas"></i>&nbsp;강냥이 품종</nuxt-link
+					>
+				</li>
       </ul>
     </nav>
     <nuxt/>
