@@ -10,7 +10,7 @@
         </li>
         <li>
 					<nuxt-link to="/how"
-						><i class="fas fa-globe-americas"></i>&nbsp;강냥이 품종</nuxt-link
+						><i class="fas fa-globe-americas"></i>&nbsp;운동 자세</nuxt-link
 					>
 				</li>
       </ul>
