@@ -23,7 +23,7 @@
 					<tr :key="pos">
 						<td>{{ pos }}</td>
 						<td>{{ tableexercise[pos - 1] }}</td>
-						<td>{{ tablevideo[pos - 1] }}</td>
+						<td><a :href="tablevideo[pos-1]">{{tablevideo[pos-1]}}</a></td>
 
 
 					</tr>
