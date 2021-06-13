@@ -1,6 +1,16 @@
 {
-    "exercises": [
-        "https://vimeo.com/178057019"
- 
+    "exercise": [
+        "Oblique twist",
+        "Benchpress",
+        "Deadlift",
+        "Squat",
+        "Tricep pulldown"
+    ],
+    "video": [
+        "https://vimeo.com/178079508",
+        "https://vimeo.com/178057019",
+        "https://vimeo.com/178056325",
+        "https://vimeo.com/178056008",
+        "https://vimeo.com/178054967"
     ]
 }

@@ -15,12 +15,14 @@
 				<thead>
 					<th>번호</th>
 					<th>운동 자세</th>
+
 				</thead>
 				<tbody>
-					<template V-for="pos in tableexercisehow.length">
+					<template V-for="pos in tableexercisekey.length">
 						<tr :key="pos">
 							<td>{{ pos }}</td>
-							<td>{{ tableexercisehow [pos - 1] }}</td>
+							<td>{{ tableexercisekey[pos - 1].name }}</td>
+
 							
 						</tr>
 					</template>
@@ -35,10 +37,11 @@
 
     export default {
         async asyncData() {
-            const workouthow = await axios.get('https://raw.githubusercontent.com/Yeowoony/doglove/master/assets/weight.json');
+            const workouthow = await axios.get('https://raw.githubusercontent.com/julianshapiro/julian.com/master/muscle/workout.json');
             //alert(Object.keys(workouthow));
             return {
-                tableexercisehow: Object.keys(workouthow.data.exercises.names)
+				tableexercise: workouthow.exercise.data,
+                tableexercisekey: Object.keys(workouthow.exercise.data),
 
             };
 
