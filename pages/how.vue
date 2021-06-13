@@ -10,46 +10,51 @@
 		</section>
 		<hr />
 		<section class="columns"></section>
-		<div class="column"></div>
-			<table class="table">
-				<thead>
-					<th>번호</th>
-					<th>운동 이름</th>
-					<th>운동 자세</th>
+		<div class="column">
+		<table class="table">
+			<thead>
+				<th>번호</th>
+				<th>운동 이름</th>
+				<th>운동 자세</th>
 
-				</thead>
-				<tbody>
-					<template v-for="pos in tableexercisekey.length">
-						<tr :key="pos">
-							<td>{{ pos }}</td>
-							<td>{{ tableexercise[pos - 1] }}</td>
-							<td>{{ tablevideo[pos - 1] }}</td>
+			</thead>
+			<tbody>
+				<template v-for="pos in tableexercisekey.length">
+					<tr :key="pos">
+						<td>{{ pos }}</td>
+						<td>{{ tableexercise[pos - 1] }}</td>
+						<td>{{ tablevideo[pos - 1] }}</td>
 
-							
-						</tr>
-					</template>
-</tbody>
-</table>
-</div>
 
+					</tr>
+				</template>
+			</tbody>
+		</table>
+		<div class="content">
+			<p class="tag is-primary">출처</p>
+			<a href="https://github.com/Yeowoony/doglove/blob/master/workout.json">My Git</a><br />
+		</div>
+	</div>
+	<div class="column"></div>
+	</div>
 
 </template>
 <script>
-    import axios from 'axios';
+	import axios from 'axios';
 
-    export default {
-        async asyncData() {
-            const workouthow = await axios.get('https://raw.githubusercontent.com/Yeowoony/doglove/master/workout.json');
-            //alert(Object.keys(workouthow));
+	export default {
+		async asyncData() {
+			const workouthow = await axios.get('https://raw.githubusercontent.com/Yeowoony/doglove/master/workout.json');
+			//alert(Object.keys(workouthow));
 			console.log(Object.keys(workouthow.data.exercise));
-            
+
 			return {
 				tableexercise: workouthow.data.exercise,
-                tableexercisekey: Object.keys(workouthow.data.exercise),
+				tableexercisekey: Object.keys(workouthow.data.exercise),
 				tablevideo: workouthow.data.video
 
-            };
+			};
 
-        },
-    };
+		},
+	};
 </script>
