@@ -4,13 +4,36 @@
         "Benchpress",
         "Deadlift",
         "Squat",
-        "Tricep pulldown"
+        "Tricep pulldown",
+        "Pulley crunch",
+        "Floor crunch",
+        "Overhead tricep extension",
+        "Dumbbell press",
+        "Forearm curl back (15 reps)",
+        "Forearm curl in (15 reps)",
+        "Seated pulley row",
+        "Shrug",
+        "Calf raise",
+        "Dumbbell romanian deadlift",
+        "Forearm curl up (25 reps)"
     ],
     "video": [
         "https://vimeo.com/178079508",
         "https://vimeo.com/178057019",
         "https://vimeo.com/178056325",
         "https://vimeo.com/178056008",
-        "https://vimeo.com/178054967"
+        "https://vimeo.com/178054967",
+        "https://vimeo.com/178052126",
+        "https://vimeo.com/178050912",
+        "https://vimeo.com/178050262",
+        "https://vimeo.com/178048727",
+        "https://vimeo.com/178047269",
+        "https://vimeo.com/178047269",
+        "https://vimeo.com/178042607",
+        "https://vimeo.com/177971664",
+        "https://vimeo.com/177971348",
+        "https://vimeo.com/177971032",
+        "https://vimeo.com/177970644"
+
     ]
 }
