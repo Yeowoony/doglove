@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "add new json api axios"
+git commit -m "ÇÑ±Û±úÁü ¼öÁ¤"
 git push -u origin master
