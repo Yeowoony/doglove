@@ -13,6 +13,21 @@
 						><i class="fas fa-globe-americas"></i>&nbsp;운동 자세</nuxt-link
 					>
 				</li>
+        <li>
+					<nuxt-link to="/exerFirebase"
+						><i class="fas fa-database"></i>&nbsp;운동 Firebase</nuxt-link
+					>
+				</li>
+        <li>
+					<nuxt-link to="/exerChart"
+						><i class="fas fa-chart-bar"></i>&nbsp;운동 통계</nuxt-link
+					>
+				</li>
+        <li>
+					<nuxt-link to="/exerStudy"
+						><i class="fas fa-school"></i>&nbsp;운동 공부</nuxt-link
+					>
+				</li>
       </ul>
     </nav>
     <nuxt/>
