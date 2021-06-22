@@ -14,8 +14,8 @@
 				<table class="table is-striped is-hoverable is-fullwidth">
 					<thead>
 						<tr>
+							<th>번호</th>
 							<th>무산소 운동</th>
-							<th>유산소 운동</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -33,7 +33,7 @@
         <thead>
             <tr>
                 <th>번호</th>
-                <th>고양이 이름</th>
+                <th>유산소 운동</th>
             </tr>
         </thead>
         <tbody>
@@ -59,8 +59,6 @@
             };
         },
         mounted() {
-            // this.getFbDbNames('cats');
-            // this.getFbDbNames('dogs');
             this.onFbDbNames('you');
             this.onFbDbNames('mou');
         },
