@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="hero is-primary">
+        <section class="hero is-success">
           <div class="hero-body">
             <p class="title">
               운동(헬스)하는 사람을 위한 웹사이트

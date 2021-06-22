@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section class="hero is-primary">
+		<section class="hero is-success">
 			<div class="hero-body">
 				<p class="title"><i class="fas fa-dumbbell"></i> 운동 자세</p>
 				<p class="subtile">
@@ -31,7 +31,7 @@
 </tbody>
 </table>
 <div class="content">
-    <p class="tag is-primary">출처</p>
+    <p class="tag is-danger">출처</p>
     <a href="https://github.com/Yeowoony/doglove/blob/master/workout.json">My Git</a><br />
 </div>
 </div>

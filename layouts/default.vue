@@ -24,8 +24,8 @@
 					>
 				</li>
         <li>
-					<nuxt-link to="/exerStudy"
-						><i class="fas fa-school"></i>&nbsp;운동 공부</nuxt-link
+					<nuxt-link to="/exerPhoto"
+						><i class="fas fa-camera"></i>&nbsp;운동자극사진</nuxt-link
 					>
 				</li>
       </ul>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section class="hero is-light">
+		<section class="hero is-success">
 			<div class="hero-body">
                 <p class="title"><i class="fas fa-dumbbell"></i> 운동 종류</p>
 				<p class="subtile">
