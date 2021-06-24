@@ -92,4 +92,90 @@
 </div>
 </template>
 <script>
+    import fbDb from '~/plugins/firebaseDb';
+    export default {
+        data() {
+            return {
+                mouNames: [],
+                mouNamesSort: [],
+                mouSort: false,
+                newmouName: '',
+                youNames: [],
+                youNamesSort: [],
+                youSort: false,
+                newyouName: '',
+            };
+        },
+        mounted() {
+            this.onFbDbNames('you');
+            this.onFbDbNames('mou');
+        },
+        methods: {
+            getFbDbNames(refName) {
+                fbDb
+                    .ref(refName)
+                    .child('names')
+                    .get()
+                    .then((snapshot) => {
+                        if (snapshot.exists()) {
+                            if (refName === 'you') {
+                                this.youNames = snapshot.val();
+                                this.sortyouNames();
+                            } else if (refName === 'mou') {
+                                this.mouNames = snapshot.val();
+                                this.sortmouNames();
+                            }
+                        }
+                    });
+            },
+            onFbDbNames(refName) {
+                fbDb
+                    .ref(refName)
+                    .child('names')
+                    .on('value', (snapshot) => {
+                        if (snapshot.exists()) {
+                            if (refName === 'you') {
+                                this.youNames = snapshot.val();
+                                this.sortyouNames();
+                            } else if (refName === 'mou') {
+                                this.mouNames = snapshot.val();
+                                this.sortmouNames();
+                            }
+                        }
+                    });
+            },
+            sortmouNames() {
+                this.mouNamesSort = this.mouNames.slice(); // copy
+                if (this.mouSort) this.mouNamesSort.sort();
+            },
+            sortyouNames() {
+                this.youNamesSort = this.youNames.slice(); // copy
+                if (this.youSort) this.youNamesSort.sort();
+            },
+            submitmouName() {
+                let newmouNames = this.mouNames.slice(); // copy
+                newmouNames.push(this.newmouName);
+                fbDb
+                    .ref('mou')
+                    .child('names')
+                    .set(newmouNames); // overwrite
+                fbDb
+                    .ref('mou')
+                    .child('size')
+                    .set(newmouNames.length);
+            },
+            submityouName() {
+                let newyouNames = this.youNames.slice(); // copy
+                newyouNames.push(this.newyouName);
+                fbDb
+                    .ref('you')
+                    .child('names')
+                    .set(newyouNames); // overwrite
+                fbDb
+                    .ref('you')
+                    .child('size')
+                    .set(newyouNames.length);
+            },
+        },
+    };
 </script>
