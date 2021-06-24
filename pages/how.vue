@@ -45,7 +45,6 @@
     export default {
         async asyncData() {
             const workouthow = await axios.get('https://raw.githubusercontent.com/Yeowoony/doglove/master/workout.json');
-            //alert(Object.keys(workouthow));
             console.log(Object.keys(workouthow.data.exercise));
 
             return {
