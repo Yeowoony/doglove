@@ -52,6 +52,6 @@ module.exports = {
         },
     },
     plugins: [
-        { src: '~/plugins/toastuiChart.js', mode: 'client' }
+        { src: '~/plugins/firebaseDb.js' }, { src: '~/plugins/toastuiChart.js', mode: 'client' }
     ],
 };
